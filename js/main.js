@@ -12,6 +12,9 @@ $(function () {
     },
   });
 
+  $('.counterUp').counterUp({
+    time: 1000, 
+  });
 
 
 

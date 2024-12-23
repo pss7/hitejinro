@@ -218,7 +218,7 @@
 #investorsWrap{background-color: #06245F; letter-spacing: -1px;}
 #investorsWrap .investorsBox{display: flex; align-items: center; height: 240px; }
 #investorsWrap h3{flex-shrink: 0; margin-right: 68px; color: #fff; font-size: 65px; font-weight: 800;}
-#investorsWrap .numberBox01{flex-shrink: 0; margin-right: 30px;}
+#investorsWrap .numberBox01{flex-shrink: 0;min-width: 225px;}
 #investorsWrap .numberBox01 span{position: relative; padding-left: 38px; display: block; font-size: 60px; color: #fff; font-weight: 800;}
 #investorsWrap .numberBox01 span::after{content: ''; position: absolute; top:26px; left:0; width: 26px; height: 23px;}
 #investorsWrap .numberBox01 span.numberUp::after{background: url(../images/main/icon01.png)no-repeat center; background-size: cover;}
@@ -230,7 +230,7 @@
 #investorsWrap .numberBox02 .resultList li em.numberUp::before{background: url(../images/main/icon02.png)no-repeat center;}
 #investorsWrap .numberBox02 .resultList li em.numberDown::before{background: url(../images/main/icon03.png)no-repeat center;}
 #investorsWrap .numberBox02 .resultList li em.numberIcon{position: relative; display: flex; align-items: center; gap: 0 7px;}
-#investorsWrap .numberBox02 .resultList li em{font-size: 17px; color: #fff; font-weight: 300;}
+#investorsWrap .numberBox02 .resultList li em{flex-shrink: 0; font-size: 17px; color: #fff; font-weight: 300;} 
 #investorsWrap .numberBox02 .resultList li:last-child{margin-bottom: 0;}
 #investorsWrap p{color: #fff; font-size: 22px; font-weight: 300; line-height: 1.3;}
 
@@ -241,7 +241,7 @@
   #investorsWrap h3{margin: 0; text-align: center; font-size: 50px;}
   #investorsWrap .numberBox01,
   #investorsWrap .numberBox02{margin: 0;}
-  #investorsWrap .numberBox01{margin-bottom: 25px;}
+  #investorsWrap .numberBox01{min-width: auto; margin-bottom: 25px;}
   #investorsWrap .numberBox02{margin-bottom: 45px;}
   #investorsWrap .numberBox02 .resultList li span{font-size: 16px;}
   #investorsWrap .numberBox02 .resultList li em{font-size: 16px;}

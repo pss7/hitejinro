@@ -1,5 +1,19 @@
 $(function () {
 
+  /* nav */
+  $('#header .depth01 li h2 a').mouseover(function() {
+      $('#header .depth02').fadeIn();
+      $('#header .bg').fadeIn();
+  });
+  $('#header').mouseleave(function() {
+      $('#header .depth02').fadeOut();
+      $('#header .bg').fadeOut();
+  });
+
+
+
+
+
   //로드 시 상단에서 헤더 나오는 효과, aos 초기화
   $(window).load(function () {
     $('#header').addClass('active');
