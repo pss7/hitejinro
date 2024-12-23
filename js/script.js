@@ -1,18 +1,24 @@
 $(function () {
 
-  /* nav */
-  $('#header .depth01 li h2 a').mouseover(function() {
-      $('#header .depth02').fadeIn();
-      $('#header .bg').fadeIn();
+  //메뉴
+  $('#header .depth01 li h2 a').mouseover(function () {
+    $('#header .depth02').fadeIn();
+    $('#header .bg').fadeIn();
   });
-  $('#header').mouseleave(function() {
-      $('#header .depth02').fadeOut();
-      $('#header .bg').fadeOut();
+  $('#header').mouseleave(function () {
+    $('#header .depth02').fadeOut();
+    $('#header .bg').fadeOut();
   });
 
+  $('#header .menuBox .menuButton.pc').click(function () {
+    $('#siteMap').fadeIn();
+    $('#siteMap .siteMapDepth01').addClass('active');
+  });
 
-
-
+  $('#siteMap .closeBtn').click(function () {
+    $('#siteMap').fadeOut();
+    $('#siteMap .siteMapDepth01').removeClass('active');
+  });
 
   //로드 시 상단에서 헤더 나오는 효과, aos 초기화
   $(window).load(function () {
