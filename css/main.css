@@ -1,5 +1,42 @@
 @charset "UTF-8";
-/* section{height: 100vh;} */
+
+/* 메인 영역 */
+#mainWrap{position: relative; height: 100vh; overflow: hidden;}
+#mainWrap video{position: absolute; top: 0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
+#mainWrap .titleBox .container{position: relative;}
+#mainWrap .titleBox .title{position: absolute; top: 330px; right:20px;}
+#mainWrap .titleBox span{display: block; margin-bottom: 21px; font-weight: 700; color: #fff; font-size: 22px;}
+#mainWrap .titleBox h3{margin-bottom: 25px; font-size: 105px; font-weight: 900; color: #fff; line-height: .9;}
+#mainWrap .titleBox p{font-size: 48px; color: #fff; font-weight: 300; line-height: 1.1;}
+
+@media (max-width: 1199px){
+
+  #mainWrap .titleBox,
+  #mainWrap .titleBox .container{height: 100%;}
+  #mainWrap .titleBox .title{position: absolute; top: 55%; left:20px; right:auto; transform: translateY(-50%);}
+  #mainWrap .titleBox span{font-size: 18px;}
+  #mainWrap .titleBox h3{margin-bottom: 20px; font-size: 75px; line-height: 1;}
+  #mainWrap .titleBox p{font-size: 30px;}
+
+}
+
+@media (max-width: 767px){
+
+  #mainWrap .titleBox .title{top: 53%;}
+  #mainWrap .titleBox span{margin-bottom: 15px; font-size: 16px;}
+  #mainWrap .titleBox h3{margin-bottom: 15px; font-size: 60px;}
+  #mainWrap .titleBox p{font-size: 20px;}
+
+}
+
+@media (max-width: 480px){
+
+  #mainWrap .titleBox .title{top: 53%;}
+  #mainWrap .titleBox span{margin-bottom: 10px; font-size: 14px;}
+  #mainWrap .titleBox h3{margin-bottom: 10px; font-size: 45px;}
+  #mainWrap .titleBox p{font-size: 16px;}
+
+}
 
 /* 계열사영역 */
 #affiliatesWrap{position: relative; padding: 135px 0 86px; z-index: 1;}
@@ -27,6 +64,7 @@
 
 @media (max-width: 1199px){
 
+  #affiliatesWrap{padding: 90px 0;}
   #affiliatesWrap .titleBox span{font-size: 12px;}
   #affiliatesWrap .titleBox h3{margin-bottom: 30px; font-size: 20px;}
   #affiliatesWrap .titleBox p.text01{font-size: 26px;}
@@ -39,6 +77,7 @@
 
 @media (max-width: 767px){
 
+  #affiliatesWrap{padding: 70px 0 90px;}
   #affiliatesWrap .titleBox{margin-bottom: 20px;}
   #affiliatesWrap .titleBox h3{margin-bottom: 25px; font-size: 18px;}
   #affiliatesWrap .titleBox p.text01{font-size: 22px;}
@@ -64,6 +103,9 @@
 
 @media (max-width: 480px){
 
+  #affiliatesWrap::after{width: 190px; height: 276px;}
+  #affiliatesWrap::before{width: 330px; height: 233px;}
+  #affiliatesWrap .titleBox p.text01{font-size: 20px; line-height: 1.3;}
   #affiliatesWrap .affiliatesList{gap: 8px 2%;}
   #affiliatesWrap .affiliatesList li a{height: 175px;}
   #affiliatesWrap .affiliatesList li a h4{font-size: 14px;}
@@ -72,13 +114,12 @@
   #affiliatesWrap .affiliatesList li:nth-child(3) a img{width: 127px;}
   #affiliatesWrap .affiliatesList li:nth-child(4) a img{width: 175px;}
   #affiliatesWrap .affiliatesList li:nth-child(5) a img{width: 185px;}
-  
+    
 }
 
 @media (max-width: 414px){
 
   #affiliatesWrap .titleBox h3{margin-bottom: 20px;}
-  #affiliatesWrap .titleBox p.text01{font-size: 20px; line-height: 1.3;}
   #affiliatesWrap .titleBox p.text02{font-size: 22px;}
   #affiliatesWrap::before{width: 399px; height: 292px;}
   #affiliatesWrap::after{width: 206px; height: 271px;}
@@ -101,7 +142,8 @@
 #newsWrap .swiper-pagination-progressbar-fill{background-color: #143E8D;}
 
 @media (max-width: 1199px){
-
+  
+  #newsWrap{padding: 80px 0 100px;}
   #newsWrap h3{font-size: 50px;}
   #newsWrap .newsList li a .imgBox{margin-bottom: 15px; border-radius: 15px;}
   #newsWrap .newsList li a .textBox p{margin-bottom: 15px; font-size: 18px;}
@@ -110,9 +152,65 @@
 
 @media (max-width: 767px){
 
+  #newsWrap{padding: 70px 0;}
   #newsWrap h3{margin-bottom: 46px; font-size: 35px;}
   #newsWrap .newsList li a .imgBox{margin-bottom: 15px; border-radius: 15px;}
   #newsWrap .newsList li a .textBox p{margin-bottom: 15px; font-size: 18px;}
+
+}
+
+/* 가치영역 */
+#worthWrap{padding: 155px 0 80px; position: relative;}
+#worthWrap video{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
+#worthWrap .worthBox{position: relative; display: flex;}
+#worthWrap .worthBox .imgBox{margin-right: 47px;}
+#worthWrap .worthBox .imgBox img{display: block; width: 100%;}
+#worthWrap .worthBox .textBox{margin-right: 16px; padding: 135px 0 0;}
+#worthWrap .worthBox .textBox .text01{margin-bottom: 10px; font-size: 30px; font-weight: 300; color: #fff;}
+#worthWrap .worthBox .textBox .title{margin-bottom: 30px;}
+#worthWrap .worthBox .textBox .title img{display: block; width: 100%;}
+#worthWrap .worthBox .textBox .text02{ font-size: 30px; font-weight: 700; color: #fff;}
+#worthWrap .worthBox .textList{margin-top: 413px; padding-top: 35px; position: relative;}
+#worthWrap .worthBox .textList::after{content: ''; position: absolute; top:0; left: 0; width: 250px; height: 1px; background-color: #fff;}
+#worthWrap .worthBox .textList li{margin-bottom: 20px; font-size: 24px; font-weight: 500; color: #fff; letter-spacing: -1px;}
+#worthWrap .worthBox .textList li:last-child{margin-bottom: 0;}
+
+@media (max-width: 1199px){
+
+  #worthWrap{position: relative; padding: 90px 0 50px;}
+  #worthWrap .worthBox{flex-direction: column;}
+  #worthWrap .worthBox .imgBox{position: absolute; left:-20px; bottom: -50px;}
+  #worthWrap .worthBox .imgBox img{width: 400px; opacity: .9;}
+  #worthWrap .worthBox .textBox{order:1; margin: 0;}
+  #worthWrap .worthBox .textList{order: 2;}
+  #worthWrap .worthBox .textBox .title img{width: 476px; margin: 0 auto;}
+  #worthWrap .worthBox .textBox{position: relative; padding: 0; text-align: center;}
+  #worthWrap .worthBox .textList{margin: 34px 0 30px; text-align: center;}
+  #worthWrap .worthBox .textList::after{width: 150px; left: 50%; margin-left: -75px;}
+  #worthWrap .worthBox .textBox .text02,
+  #worthWrap .worthBox .textBox .text01{font-size: 24px;}
+  #worthWrap .worthBox .textBox .text01{margin-bottom: 25px;}
+  #worthWrap .worthBox .textList li{margin-bottom: 20px; font-size: 20px;}
+
+}
+
+@media (max-width: 767px){
+
+  #worthWrap{padding: 80px 0 30px;}
+  #worthWrap .worthBox .textBox .title img{width: 300px;}
+  #worthWrap .worthBox .textBox .text02,
+  #worthWrap .worthBox .textBox .text01{font-size: 20px;}
+  #worthWrap .worthBox .textList li{font-size: 16px;}
+  #worthWrap .worthBox .imgBox{display: none;}
+  #worthWrap .worthBox .imgBox img{width: 300px;}
+
+}
+
+@media (max-width: 480px){
+
+  #worthWrap{padding: 70px 0 20px;}
+  #worthWrap .worthBox .imgBox{bottom: -20px;}
+  #worthWrap .worthBox .imgBox img{width: 200px;}
 
 }
 
@@ -127,7 +225,6 @@
 #investorsWrap .numberBox01 span.numberDown::after{background: url(../images/main/icon01.png)no-repeat center;  background-size: cover; transform: rotate(180deg);}
 #investorsWrap .numberBox02{margin-right: 61px;}
 #investorsWrap .numberBox02 .resultList li{margin-bottom: 14px; display: flex; align-items: center; gap: 0 79px; line-height: 1;}
-
 #investorsWrap .numberBox02 .resultList li span{flex-shrink: 0; width: 60px; color: #fff; font-size: 17px; font-weight: 300;}
 #investorsWrap .numberBox02 .resultList li em.numberIcon::before{content: ''; width: 14px; height: 12px; } 
 #investorsWrap .numberBox02 .resultList li em.numberUp::before{background: url(../images/main/icon02.png)no-repeat center;}
@@ -139,7 +236,7 @@
 
 @media (max-width: 1199px){
 
-  #investorsWrap{padding: 30px 0 40px;}
+  #investorsWrap{padding: 60px 0;}
   #investorsWrap .investorsBox{display: flex; flex-direction: column; height: auto;}
   #investorsWrap h3{margin: 0; text-align: center; font-size: 50px;}
   #investorsWrap .numberBox01,
