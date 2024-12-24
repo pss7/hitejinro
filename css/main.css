@@ -1,12 +1,7 @@
 @charset "UTF-8";
 
 /* 메인 영역 */
-
 #mainWrap .slick .slick-active img{transform:scale(1); transition:all 7s;}
-
-
-
-
 #mainWrap .slick-slide{position: relative; height: 100vh; overflow: hidden;}
 #mainWrap .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0; }
 #mainWrap .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.6); }
@@ -17,17 +12,12 @@
 #mainWrap .titleBox span{display: block; margin-bottom: 21px; font-weight: 700; color: #fff; font-size: 22px; transform: translateY(50px); animation: textEffect 1.7s .2s ease-out both;}
 #mainWrap .titleBox h3{margin-bottom: 25px; font-size: 105px; font-weight: 900; color: #fff; line-height: .9; transform: translateY(50px); animation: textEffect 1.7s .2s ease-out both;}
 #mainWrap .titleBox p{font-size: 48px; color: #fff; font-weight: 300; line-height: 1.1; animation: textEffect 1.7s .3s ease-out both;}
-
-
 @keyframes textEffect{
 
   0%{opacity: 0; transform: translateY(60px);}
   100%{opacity: 1; transform: translateY(0);}
 
 }
-
-
-
 
 @media (max-width: 1199px){
 
@@ -57,91 +47,73 @@
 }
 
 /* 계열사영역 */
-#affiliatesWrap{position: relative; padding: 135px 0 86px; z-index: 1;}
-#affiliatesWrap::after{content: ''; width: 423px; height: 530px; position: absolute; top:0; right:0; background: url(../images/main/bg01.png)no-repeat; background-size: cover; z-index: -1;}
-#affiliatesWrap::before{content: ''; width: 629px; height: 507px; position: absolute; bottom:0; left:0; background: url(../images/main/bg02.png)no-repeat; background-size: cover; z-index: -1;}
-#affiliatesWrap .titleBox{margin-bottom: 32px;}
+#affiliatesWrap{padding: 185px 0 165px;}
+#affiliatesWrap .titleBox{margin-bottom: 80px;}
 #affiliatesWrap .titleBox span{display: block; font-size: 13px; font-weight: 700; color: #5C86DE;}
 #affiliatesWrap .titleBox h3{margin-bottom: 35px; font-size: 24px; font-weight: 700; color: #032C81;}
 #affiliatesWrap .titleBox p.text01{margin-bottom: 11px; font-size: 30px; color: #050C19; font-weight: 300; line-height: 1.6;}
 #affiliatesWrap .titleBox p.text02{font-size: 65px; color: #000; font-weight: 700; line-height: 1.1; }
 #affiliatesWrap .titleBox p.text02 em{color: #143E8D;}
-#affiliatesWrap .affiliatesList{padding-left: 55px; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 32px;}
-#affiliatesWrap .affiliatesList li{width: 285px;}
-#affiliatesWrap .affiliatesList li a{display: block; width: 100%; height: 224px; border-radius: 30px; border: 2px solid #143E8D; transition: all .5s; overflow: hidden; background-color: #fff;}
-#affiliatesWrap .affiliatesList li a:hover{box-shadow: 9px 10px 16px rgba(20, 62, 141, 0.33);}
-#affiliatesWrap .affiliatesList li a .imgBox{margin-bottom: 5px;}
-#affiliatesWrap .affiliatesList li a .imgBox img{display: block; margin: 0 auto; transition: all .5s;}
-#affiliatesWrap .affiliatesList li a h4{font-size: 18px; font-weight: 500; color: #143E8D; text-align: center;}
-#affiliatesWrap .affiliatesList li:nth-child(1) a .imgBox{margin: 10px 0 0;}
-#affiliatesWrap .affiliatesList li:nth-child(1) a h4{margin-top: 4px;}
-#affiliatesWrap .affiliatesList li:nth-child(2) a h4{margin-top: -18px;}
-#affiliatesWrap .affiliatesList li:nth-child(3) a h4{margin-top: -16px;}
-#affiliatesWrap .affiliatesList li:nth-child(4) a h4{margin-top: -5px;}
-#affiliatesWrap .affiliatesList li:nth-child(5) a h4{margin-top: -9px;}
+#affiliatesWrap .affiliatesList{display: flex; flex-direction: column; align-items: flex-end;}
+#affiliatesWrap .affiliatesList li{margin-bottom: 30px;}
+#affiliatesWrap .affiliatesList li a{position: relative; display: flex; gap: 0 5px;  font-size: 32px; font-weight: 600; color: #3060C0; line-height: 1.1;}
+#affiliatesWrap .affiliatesList li a::after{content: ''; padding: 28px 179px 0 0; background: url(../images/main/link_arrow_icon.png)no-repeat center; background-size: 100% auto;}
+#affiliatesWrap .affiliatesBox{position: relative;}
+#affiliatesWrap .affiliatesBox::before{content: ''; padding: 345px 292px 0 0;  position: absolute; bottom: 0; left:0; background: url(../images/main/icon04.png)no-repeat center; background-size: 100% auto; animation: iconEffect 2s alternate infinite both;}
+
+@keyframes iconEffect {
+
+  0%{transform: rotate(-15deg);}
+  100%{transform: rotate(15deg);}
+
+}
 
 @media (max-width: 1199px){
 
-  #affiliatesWrap{padding: 90px 0;}
+  #affiliatesWrap{padding: 90px 0 55px;}
   #affiliatesWrap .titleBox span{font-size: 12px;}
   #affiliatesWrap .titleBox h3{margin-bottom: 30px; font-size: 20px;}
   #affiliatesWrap .titleBox p.text01{font-size: 26px;}
   #affiliatesWrap .titleBox p.text02{font-size: 40px;}
-  #affiliatesWrap .affiliatesList{padding: 0; justify-content: center; gap: 24px;}
-  #affiliatesWrap .affiliatesList li a{border-radius: 20px;}
-  #affiliatesWrap::before{width: 500px; height: 382px;}
+  #affiliatesWrap .affiliatesList li{margin-bottom: 25px;}
+  #affiliatesWrap .affiliatesList li a{font-size: 25px;}
+  #affiliatesWrap .affiliatesList li a::after{padding: 28px 140px 0 0;}
+  #affiliatesWrap .affiliatesBox::before{padding: 313px 265px 0 0;}
 
 }
 
 @media (max-width: 767px){
 
-  #affiliatesWrap{padding: 70px 0 90px;}
-  #affiliatesWrap .titleBox{margin-bottom: 20px;}
+  #affiliatesWrap{padding: 70px 0 45px;}
+  #affiliatesWrap .titleBox{margin-bottom: 60px;}
   #affiliatesWrap .titleBox h3{margin-bottom: 25px; font-size: 18px;}
   #affiliatesWrap .titleBox p.text01{font-size: 22px;}
   #affiliatesWrap .titleBox p.text02{font-size: 26px;}
-  #affiliatesWrap .affiliatesList{gap: 15px 2%;}
-  #affiliatesWrap .affiliatesList li{width: 49%;}
-  #affiliatesWrap .affiliatesList li a{border-radius: 15px;}
-  #affiliatesWrap .affiliatesList li a h4{font-size: 16px;}
-  #affiliatesWrap .affiliatesList li:nth-child(1) a h4{margin-top: 7px;}
+  #affiliatesWrap .affiliatesList li{margin-bottom: 10px;}
+  #affiliatesWrap .affiliatesList li a{font-size: 18px;}
+  #affiliatesWrap .affiliatesList li a::after{padding: 28px 100px 0 0;}
+  #affiliatesWrap .affiliatesBox::before{padding: 226px 189px 0 0;}
  
-}
-
-@media (max-width: 576px){
-
-  #affiliatesWrap .affiliatesList li a{height: 197px;}
-  #affiliatesWrap .affiliatesList li:nth-child(1) a img{width: 150px;}
-  #affiliatesWrap .affiliatesList li:nth-child(2) a img{width: 120px;}
-  #affiliatesWrap .affiliatesList li:nth-child(3) a img{width: 140px;}
-  #affiliatesWrap .affiliatesList li:nth-child(4) a img{width: 193px;}
-  #affiliatesWrap .affiliatesList li:nth-child(5) a img{width: 205px;}
-  
 }
 
 @media (max-width: 480px){
 
-  #affiliatesWrap::after{width: 190px; height: 276px;}
-  #affiliatesWrap::before{width: 330px; height: 233px;}
+  #affiliatesWrap{padding: 40px 0 45px;}
   #affiliatesWrap .titleBox p.text01{font-size: 20px; line-height: 1.3;}
-  #affiliatesWrap .affiliatesList{gap: 8px 2%;}
-  #affiliatesWrap .affiliatesList li a{height: 175px;}
-  #affiliatesWrap .affiliatesList li a h4{font-size: 14px;}
-  #affiliatesWrap .affiliatesList li:nth-child(1) a img{width: 132px;}
-  #affiliatesWrap .affiliatesList li:nth-child(2) a img{width: 108px;}
-  #affiliatesWrap .affiliatesList li:nth-child(3) a img{width: 127px;}
-  #affiliatesWrap .affiliatesList li:nth-child(4) a img{width: 175px;}
-  #affiliatesWrap .affiliatesList li:nth-child(5) a img{width: 185px;}
-    
+  #affiliatesWrap .titleBox{margin-bottom: 50px;}
+  #affiliatesWrap .affiliatesList li{margin-bottom: 5px;}
+  #affiliatesWrap .affiliatesList li a{font-size: 16px;}
+  #affiliatesWrap .affiliatesList li a::after{padding: 28px 80px 0 0;}
+  #affiliatesWrap .affiliatesBox::before{padding: 162px 134px 0 0;}
+  
 }
 
 @media (max-width: 414px){
 
   #affiliatesWrap .titleBox h3{margin-bottom: 20px;}
   #affiliatesWrap .titleBox p.text02{font-size: 22px;}
-  #affiliatesWrap::before{width: 399px; height: 292px;}
-  #affiliatesWrap::after{width: 206px; height: 271px;}
-
+  #affiliatesWrap .affiliatesBox::before{padding: 136px 114px 0 0;}
+  
 }
 
 /* 뉴스영역 */
@@ -178,8 +150,8 @@
 }
 
 /* 가치영역 */
-#worthWrap{padding: 155px 0 80px; position: relative;}
-#worthWrap video{position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
+#worthWrap{padding: 155px 0 80px;  position: relative;}
+#worthWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/worth_img01.jpg)no-repeat center; background-size: cover; background-attachment: fixed; z-index: -1;}
 #worthWrap .worthBox{position: relative; display: flex;}
 #worthWrap .worthBox .imgBox{margin-right: 47px;}
 #worthWrap .worthBox .imgBox img{display: block; width: 100%;}
