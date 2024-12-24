@@ -169,7 +169,7 @@
   #worthWrap{position: relative; padding: 90px 0 50px;}
   #worthWrap .worthBox{flex-direction: column;}
   #worthWrap .worthBox .imgBox{position: absolute; left:-20px; bottom: -50px;}
-  #worthWrap .worthBox .imgBox img{width: 400px; opacity: .9;}
+  #worthWrap .worthBox .imgBox img{display: none; width: 400px; opacity: .9;}
   #worthWrap .worthBox .textBox{order:1; margin: 0;}
   #worthWrap .worthBox .textList{order: 2;}
   #worthWrap .worthBox .textBox .title img{width: 476px; margin: 0 auto;}

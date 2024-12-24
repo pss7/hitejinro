@@ -1,5 +1,7 @@
 
 $(function () {
+
+  /* 메인 */
   var $slick_carousel = $('#mainWrap .slick');
   $slick_carousel.on('init', function (event, slick) {
     $slick_carousel.find('.slick-current').removeClass('slick-active');
@@ -8,7 +10,6 @@ $(function () {
     }, 100);
   });
 
-  /* 메인 */
   $("#mainWrap .slick").slick({
     autoplay: true,
     arrows: false,
@@ -32,19 +33,6 @@ $(function () {
     $('#mainWrap .titleBox').fadeOut();
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   // 뉴스 이미지 슬라이드
   const swiper = new Swiper(".swiper-container", {
     slidesPerView: "auto",
@@ -59,27 +47,6 @@ $(function () {
   $('.counterUp').counterUp({
     time: 1000,
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   /*
   $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -118,21 +85,5 @@ $(function () {
   toggleSectionScroll();
   $(window).on("resize", toggleSectionScroll);
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
