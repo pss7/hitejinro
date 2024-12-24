@@ -10,7 +10,7 @@ $(function () {
 
   /* 메인 */
   $("#mainWrap .slick").slick({
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     dots: false,
     fade: true,
@@ -21,7 +21,7 @@ $(function () {
     slidesToScroll: 1,
     zIndex: 1000,
     pauseOnHover: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 8000,
     speed: 1500,
   });
 
