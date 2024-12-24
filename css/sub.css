@@ -17,6 +17,32 @@
 
 }
 
+/* 공통-상단텍스트 */
+.topTitleText{margin-bottom: 136px;}
+.topTitleText h3{margin-bottom: 20px; font-size: 30px; font-weight: 900; color: #000; line-height: 1.2;}
+.topTitleText p{font-size: 50px; color: #000; line-height: 1.1; font-weight: 200;}
+
+@media (max-width: 1199px){
+
+  .topTitleText{margin-bottom: 88px;}
+  .topTitleText h3{margin-bottom: 10px; font-size: 20px;}
+  .topTitleText p{font-size: 35px;}
+
+}
+
+@media (max-width: 767px){
+
+  .topTitleText{margin-bottom: 20px; text-align: center;}
+  .topTitleText h3{font-size: 18px;}
+  .topTitleText p{font-size: 25px;}
+
+}
+
+@media (max-width:480px){
+
+  .topTitleText p{font-size: 22px;}
+
+}
 
 /* 공통-서브이미지 */
 .subViewBox .imgBox{height: 390px; overflow: hidden;}
@@ -29,10 +55,7 @@
 .subMenuBox .subMenuList li a{display: block; padding: 0 50px; font-size: 15px; font-weight: 500; color: #bbb; white-space: nowrap;}
 .subMenuBox .subMenuList li a.active{color: #3060C0; font-weight: 600;}
 
-/* 공통-인사말 */
-.greetingWrap .topTitleText{margin-bottom: 136px;}
-.greetingWrap .topTitleText h3{margin-bottom: 20px; font-size: 30px; font-weight: 900; color: #000; line-height: 1.2;}
-.greetingWrap .topTitleText p{font-size: 50px; color: #000; line-height: 1.1; font-weight: 200;}
+/* 인사말 */
 .greetingWrap .greetingLayoutBox{display: flex; gap: 0 126px;}
 .greetingWrap .greetingYearBox{flex-shrink: 0; font-size: 40px; line-height: 1.2; font-weight: 200; color: #000;}
 .greetingWrap .greetingYearBox span.color01{color: #2E3192; font-weight: 700;}
@@ -75,5 +98,72 @@
 @media (max-width:480px){
 
   .greetingWrap .topTitleText p{font-size: 22px;}
+
+}
+
+/* 찾아오시는 길 */
+.directionsWrap .topTitleText{margin-bottom: 71px;}
+.directionsWrap .directionsLayoutBox{margin-bottom: 41px; display: flex; justify-content: space-between;}
+.directionsWrap .directionsTitleBox span{display: block; margin-bottom: 8px; font-size: 20px; font-weight: 600; color: #0096D6; line-height: 1;}
+.directionsWrap .directionsTitleBox h4{font-size: 40px; font-weight: 600; color: #000; line-height: 1;}
+.directionsWrap .directionsInfoList{display: flex; flex-wrap: wrap; gap: 0 20px;}
+.directionsWrap .directionsInfoList li{position: relative; padding: 90px 23px 28px 22px; width: 220px; border-radius: 20px; border: 1px solid #D9D9D9; font-size: 20px; color: #666; letter-spacing: -1px;}
+.directionsWrap .directionsInfoList li::before{content: ''; position: absolute;}
+.directionsWrap .directionsInfoList li.icon01::before{padding: 30px 35px 0 0; top:24px; left:30px; background: url(../images/sub/icon01.png)no-repeat center; background-size: 100% auto;} 
+.directionsWrap .directionsInfoList li.icon02::before{padding: 30px 35px 0 0; top:24px; left:30px; background: url(../images/sub/icon02.png)no-repeat center; background-size: 100% auto;}
+.directionsWrap .directionsInfoList li.icon03::before{padding: 30px 30px 0 0; top:30px; left:30px; background: url(../images/sub/icon03.png)no-repeat center; background-size: 100% auto;}
+.directionsWrap .mapBox{height: 500px; border-radius: 40px; overflow: hidden;}
+.directionsWrap .mapBox > div{width: 100%; height: 100%;}
+.directionsWrap .mapBox .root_daum_roughmap .wrap_map{height: 100%!important;}
+.directionsWrap .mapBox .map_border {display: none;}
+
+@media (max-width: 1199px){
+
+  .directionsWrap .directionsTitleBox span{font-size: 18px;}
+  .directionsWrap .directionsTitleBox h4{font-size: 30px;}
+  .directionsWrap .directionsInfoList li{font-size: 18px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .directionsWrap .directionsInfoList{gap: 0 2%; justify-content: center;}
+  .directionsWrap .directionsInfoList li{width: 32%;}
+  .directionsWrap .directionsTitleBox{margin-bottom: 30px;}
+  .directionsWrap .directionsLayoutBox{flex-direction: column;}
+
+}
+
+@media (max-width: 767px){
+
+  .directionsWrap .mapBox{height: 350px; border-radius: 10px;}
+  .directionsWrap .directionsInfoList li{width: 32.4%; padding: 75px 10px 28px 20px; font-size: 16px; border-radius: 10px;}
+  .directionsWrap .directionsInfoList li.icon01::before{padding: 25px 30px 0 0; left: 20px;} 
+  .directionsWrap .directionsInfoList li.icon02::before{padding: 26px 30px 0 0; left: 20px;}
+  .directionsWrap .directionsInfoList li.icon03::before{top: 27px; padding: 27px 27px 0 0; left: 20px;}
+  .directionsWrap .directionsInfoList{gap: 0 1.4%;}
+  .directionsWrap .directionsTitleBox{margin-bottom: 20px;}
+  .directionsWrap .directionsTitleBox span{font-size: 16px;}
+  .directionsWrap .directionsTitleBox h4{font-size: 25px;}
+  .directionsWrap .directionsLayoutBox{margin-bottom: 30px;}
+
+}
+
+@media (max-width: 576px){
+
+  .directionsWrap .directionsInfoList{gap: 10px 2%;}
+  .directionsWrap .directionsInfoList li{width: 49%;}
+
+}
+
+@media (max-width: 480px){
+
+  .directionsWrap .directionsTitleBox h4{font-size: 20px;}
+
+}
+
+@media (max-width: 414px){
+
+  .directionsWrap .directionsInfoList li{width: 100%;}
 
 }
