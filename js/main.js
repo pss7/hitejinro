@@ -1,5 +1,49 @@
 
 $(function () {
+  var $slick_carousel = $('#mainWrap .slick');
+  $slick_carousel.on('init', function (event, slick) {
+    $slick_carousel.find('.slick-current').removeClass('slick-active');
+    setTimeout(function () {
+      $slick_carousel.find('.slick-current').addClass('slick-active');
+    }, 100);
+  });
+
+  /* 메인 */
+  $("#mainWrap .slick").slick({
+    autoplay: false,
+    arrows: false,
+    dots: false,
+    fade: true,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+  });
+
+  $('#mainWrap .slick').on('afterChange', function (slick, currentSlide, nextSlide) {
+    $('#mainWrap .titleBox').fadeIn();
+  });
+  $('#mainWrap .slick').on('beforeChange', function (slick, currentSlide, nextSlide) {
+    $('#mainWrap .titleBox').fadeOut();
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // 뉴스 이미지 슬라이드
   const swiper = new Swiper(".swiper-container", {
@@ -13,7 +57,7 @@ $(function () {
   });
 
   $('.counterUp').counterUp({
-    time: 1000, 
+    time: 1000,
   });
 
 

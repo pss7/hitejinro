@@ -1,13 +1,31 @@
 @charset "UTF-8";
 
 /* 메인 영역 */
-#mainWrap{position: relative; height: 100vh; overflow: hidden;}
-#mainWrap video{position: absolute; top: 0; left:0; right:0; bottom: 0; width: 100%; height: 100%; object-fit: cover;}
+
+#mainWrap .slick .slick-active img{transform:scale(1); transition:all 7s;}
+
+
+
+
+#mainWrap .slick-slide{position: relative; height: 100vh; overflow: hidden;}
+#mainWrap .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0; }
+#mainWrap .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.6); }
 #mainWrap .titleBox .container{position: relative;}
-#mainWrap .titleBox .title{position: absolute; top: 330px; right:20px;}
-#mainWrap .titleBox span{display: block; margin-bottom: 21px; font-weight: 700; color: #fff; font-size: 22px;}
-#mainWrap .titleBox h3{margin-bottom: 25px; font-size: 105px; font-weight: 900; color: #fff; line-height: .9;}
-#mainWrap .titleBox p{font-size: 48px; color: #fff; font-weight: 300; line-height: 1.1;}
+#mainWrap .titleBox .title{position: absolute; top: 284px; left:0;}
+#mainWrap .titleBox span{display: block; margin-bottom: 21px; font-weight: 700; color: #fff; font-size: 22px; transform: translateY(50px); animation: textEffect 1.7s .2s ease-out both;}
+#mainWrap .titleBox h3{margin-bottom: 25px; font-size: 105px; font-weight: 900; color: #fff; line-height: .9; transform: translateY(50px); animation: textEffect 1.7s .2s ease-out both;}
+#mainWrap .titleBox p{font-size: 48px; color: #fff; font-weight: 300; line-height: 1.1; animation: textEffect 1.7s .3s ease-out both;}
+
+
+@keyframes textEffect{
+
+  0%{opacity: 0; transform: translateY(60px);}
+  100%{opacity: 1; transform: translateY(0);}
+
+}
+
+
+
 
 @media (max-width: 1199px){
 
