@@ -9,7 +9,7 @@
 /* 공통-헤더 */
 #header.scroll{box-shadow: 0 3px 10px rgba(0, 0, 0, .1);}
 #header.active{top:0; transition: all 1s;}
-#header{padding: 0 80px; display: flex; align-items: center; position: fixed; top:-200px; left:0; right:0; background-color: #fff; z-index: 99999; transition: all .5s;}
+#header{padding: 0 90px; display: flex; align-items: center; position: fixed; top:-200px; left:0; right:0; background-color: #fff; z-index: 99999; transition: all .5s;}
 #header .logo{padding-top: 10px; margin-right: calc(50% - 583px);}
 #header .logo h1 a{display: block; padding: 58px 214px 0 0; background: url(../images/common/logo.png)no-repeat center; background-size: 100% auto;}
 #header nav{flex-shrink: 0; margin-right: calc(50% - 663px);}
@@ -94,30 +94,31 @@
 }
 
 /* 공통-푸터 */
-#footer{position: relative; display: flex; justify-content: space-between; gap: 0 30px; padding: 118px 75px 101px; background: linear-gradient(to right, #143E8D 30%, #0296D6);}
-#footer .footerBox01 .footerLogo{margin-bottom: 28px; display: inline-block; padding: 73px 250px 0 0; background: url(../images/common/logo02.png)no-repeat center; background-size: 100% auto;}
-#footer .footerBox01 .footerLink{margin-bottom: 50px; display: flex; align-items: center; gap: 0 51px;}
+#footer{position: relative; display: flex; justify-content: space-between; gap: 0 30px; padding: 66px 90px 42px; background: linear-gradient(to right, #143E8D 30%, #0296D6);}
+#footer .footerBox01 .footerLogo{margin-bottom: 33px; display: inline-block; padding: 73px 250px 0 0; background: url(../images/common/logo02.png)no-repeat center; background-size: 100% auto;}
+#footer .footerBox01 .footerLink{margin-bottom: 38px; display: flex; align-items: center; gap: 0 51px;}
 #footer .footerBox01 .footerLink li{position: relative;}
 #footer .footerBox01 .footerLink li::after{content: ''; position: absolute; top:5px; right:-26px; width: 1px; height: 11px; background-color: #fff;}
 #footer .footerBox01 .footerLink li:last-child:after{display: none;}
-#footer .footerBox01 .footerLink li a{position: relative; display: block; font-size: 18px; font-weight: 300; color: #fff; line-height: 1.2;}
+#footer .footerBox01 .footerLink li a{position: relative; display: block; font-size: 18px; font-weight: 300; color: rgba(255, 255, 255, 0.5); line-height: 1.2;}
 #footer .footerBox01 .footerLink li a::before{content: ''; position: absolute; left:0; bottom: -5px; width: 0; height: 1px; background-color: #fff; transition: all .5s;}
+#footer .footerBox01 .footerLink li a:hover{color: #fff;}
 #footer .footerBox01 .footerLink li a:hover:before{width: 100%;}
-#footer address{margin-bottom: 98px; color: #fff; font-weight: 300; line-height: 1.2;}
+#footer address{margin-bottom: 90px; color: rgba(255, 255, 255, 0.4); font-weight: 300; line-height: 1.2;}
 #footer address.m{display: none;}
 #footer .copyright{font-size: 14px; font-weight: 300; color: rgba(255, 255, 255, 0.3);}
 #footer .copyright.m{display: none;}
 #footer .footerBox02{flex-shrink: 0;}
-#footer .footerBox02 .depth01{display: flex; gap: 0 83px; text-align: right;}
-#footer .footerBox02 .depth01 > li > a{margin-bottom: 10px; display: block;}
+#footer .footerBox02 .depth01{display: flex; gap: 0 85px; text-align: right;}
+#footer .footerBox02 .depth01 > li > a{margin-bottom: 11px; display: block;}
 #footer .footerBox02 .depth01 > li > a > span{position: relative; color: #fff; font-size: 18px; font-weight: 700; line-height: 1.2;}
 #footer .footerBox02 .depth01 > li > a > span::before{content: ''; position: absolute; left:0; bottom: -2px; width: 0; height: 1px; background-color: #fff; transition: all .5s;}
 #footer .footerBox02 .depth01 > li:hover > a > span:before{width: 100%;}
-#footer .footerBox02 .depth02 > li{margin-bottom: 4px;}
+#footer .footerBox02 .depth02 > li{margin-bottom: 5px;}
 #footer .footerBox02 .depth02 > li:last-child{margin-bottom: 0;}
 #footer .footerBox02 .depth02 > li > a {display: block; font-weight: 600; color: rgba(255, 255, 255, 0.38); transition: all .5s;}
 #footer .footerBox02 .depth02 > li > a:hover{color: #fff;}
-#footer .footerSelectBox{position: absolute; right:75px; bottom: 110px; }
+#footer .footerSelectBox{position: absolute; right:90px; bottom: 42px; }
 #footer .footerSelectBox .footerSelect{display: block; min-width: 250px; padding: 20px 20px 16px 22px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.4); }
 #footer .footerSelectBox .footerSelect span{position: relative; display: block; color: rgba(255, 255, 255, 0.7); font-weight: 600;}
 #footer .footerSelectBox .footerSelect span::after{content: ''; padding: 6px 12px 0 0; position: absolute; top:50%; right:0; transform: translateY(-50%);  background: url(../images/common/arrow_icon.png)no-repeat center; background-size: 100% auto; transition: all .5s;}

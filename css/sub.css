@@ -18,3 +18,4 @@
 .subMenuBox .subMenuList{display: flex; align-items: center; justify-content: center; height: 60px; }
 .subMenuBox .subMenuList li a{display: block; padding: 0 50px; font-size: 15px; font-weight: 500; color: #bbb; white-space: nowrap;}
 .subMenuBox .subMenuList li a.active{color: #3060C0; font-weight: 600;}
+
