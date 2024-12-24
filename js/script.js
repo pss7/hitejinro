@@ -20,6 +20,20 @@ $(function () {
     $('#siteMap .siteMapDepth01').removeClass('active');
   });
 
+  $('#header .menuBox .menuButton.m').click(function () {
+    $('#mobileMenu').animate({
+      right: 0
+    }, 500);
+    $('.mobileBg').show();
+  });
+
+  $('#mobileMenu .closeBtn').click(function () {
+    $('#mobileMenu').animate({
+      right: -3000
+    }, 500);
+    $('.mobileBg').hide();
+  });
+
   //로드 시 상단에서 헤더 나오는 효과, aos 초기화
   $(window).load(function () {
     $('#header').addClass('active');
