@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
-#sub{min-height: 1000px; margin-top: 111px;}
+/* 공통 */
+#sub{ min-height: 1000px; margin-top: 111px;}
 
 @media (max-width: 1199px){
 
   #sub{margin-top: 70px;}
 
 }
+
+.contentWrap{padding: 70px 0 110px;}
+
+@media (max-width: 767px){
+
+  .contentWrap{padding: 60px 0 110px;}
+
+}
+
 
 /* 공통-서브이미지 */
 .subViewBox .imgBox{height: 390px; overflow: hidden;}
@@ -19,3 +29,51 @@
 .subMenuBox .subMenuList li a{display: block; padding: 0 50px; font-size: 15px; font-weight: 500; color: #bbb; white-space: nowrap;}
 .subMenuBox .subMenuList li a.active{color: #3060C0; font-weight: 600;}
 
+/* 공통-인사말 */
+.greetingWrap .topTitleText{margin-bottom: 136px;}
+.greetingWrap .topTitleText h3{margin-bottom: 20px; font-size: 30px; font-weight: 900; color: #000; line-height: 1.2;}
+.greetingWrap .topTitleText p{font-size: 50px; color: #000; line-height: 1.1; font-weight: 200;}
+.greetingWrap .greetingLayoutBox{display: flex; gap: 0 126px;}
+.greetingWrap .greetingYearBox{flex-shrink: 0; font-size: 40px; line-height: 1.2; font-weight: 200; color: #000;}
+.greetingWrap .greetingYearBox span.color01{color: #2E3192; font-weight: 700;}
+.greetingWrap .greetingYearBox span.color02{color: #00A1E4; font-weight: 700;}
+.greetingWrap .greetingContentBox .text01{margin-bottom: 21px; font-size: 32px; font-weight: 600; color: #333; line-height: 1.3;}
+.greetingWrap .greetingContentBox .text02{color: #555; font-weight: 500; line-height: 2; text-align: justify; }
+.greetingWrap .greetingContentBox .leaderText{margin-top: 30px; text-align: right; font-weight: 500; color: #888; font-size: 16px;}
+.greetingWrap .greetingContentBox .leaderText strong{padding-left: 7px; font-size: 20px; color: #000;}
+
+@media (max-width: 1199px){
+
+  .greetingWrap .topTitleText{margin-bottom: 88px;}
+  .greetingWrap .topTitleText h3{margin-bottom: 10px; font-size: 20px;}
+  .greetingWrap .topTitleText p{font-size: 35px;}
+  .greetingWrap .greetingYearBox{font-size: 30px;}
+  .greetingWrap .greetingContentBox .text01{font-size: 28px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .greetingWrap .greetingLayoutBox{gap: 0 80px;}
+
+}
+
+@media (max-width: 767px){
+
+  .greetingWrap .topTitleText{margin-bottom: 20px; text-align: center;}
+  .greetingWrap .topTitleText h3{font-size: 18px;}
+  .greetingWrap .topTitleText p{font-size: 25px;}
+  .greetingWrap .greetingYearBox{font-size: 20px; margin-bottom: 25px;}
+  .greetingWrap .greetingContentBox .text01{font-size: 18px;}
+  .greetingWrap .greetingContentBox .text02{font-size: 14px; text-align: left;}
+  .greetingWrap .greetingLayoutBox{flex-direction: column; text-align: center;}
+  .greetingWrap .greetingContentBox .leaderText{font-size: 14px;}
+  .greetingWrap .greetingContentBox .leaderText strong{padding-left: 5px; font-size: 18px;}
+
+}
+
+@media (max-width:480px){
+
+  .greetingWrap .topTitleText p{font-size: 22px;}
+
+}
