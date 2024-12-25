@@ -55,6 +55,21 @@
 .subMenuBox .subMenuList li a{display: block; padding: 0 50px; font-size: 15px; font-weight: 500; color: #bbb; white-space: nowrap;}
 .subMenuBox .subMenuList li a.active{color: #3060C0; font-weight: 600;}
 
+@media (max-width: 767px){
+
+  .subMenuBox .subMenuList li a{padding: 0 25px;}
+
+}
+
+@media (max-width: 576px){
+
+  .subMenuBox .container{padding: 0;}
+  .subMenuBox{overflow-x: auto;}
+  .subMenuBox .subMenuList{width: 500px; margin: 0 auto;}
+  .subMenuBox .subMenuList li a{padding: 0 20px;}
+
+}
+
 /* 인사말 */
 .greetingWrap .greetingLayoutBox{display: flex; gap: 0 126px;}
 .greetingWrap .greetingYearBox{flex-shrink: 0; font-size: 40px; line-height: 1.2; font-weight: 200; color: #000;}
