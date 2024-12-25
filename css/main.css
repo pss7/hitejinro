@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+/* 메인 영역 */
+#mainWrap .slick .slick-active img{transform:scale(1); transition:all 7s;}
+#mainWrap .slick-slide{position: relative; height: 100vh; overflow: hidden;}
+#mainWrap .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0; }
+#mainWrap .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.6); }
+#mainWrap .titleBox,
+#mainWrap .titleBox .container{height: 100%;}
+#mainWrap .titleBox .container{position: relative;}
+#mainWrap .titleBox .title{position: absolute; top: 43.3%; left:0;}
+#mainWrap .titleBox span{display: block; margin-bottom: 21px; font-weight: 700; color: #fff; font-size: 22px; transform: translateY(50px); animation: textEffect 1.7s .2s ease-out both;}
+#mainWrap .titleBox h3{margin-bottom: 25px; font-size: 105px; font-weight: 900; color: #fff; line-height: .9; transform: translateY(50px); animation: textEffect 1.7s .2s ease-out both;}
+#mainWrap .titleBox p{font-size: 48px; color: #fff; font-weight: 300; line-height: 1.1; animation: textEffect 1.7s .3s ease-out both;}
+@keyframes textEffect{
+
+  0%{opacity: 0; transform: translateY(60px);}
+  100%{opacity: 1; transform: translateY(0);}
+
+}
+
+@media (max-width: 1199px){
+
+  #mainWrap .titleBox .title{position: absolute; top: 70%; left:20px; right:auto; transform: translateY(-50%);}
+  #mainWrap .titleBox span{font-size: 18px;}
+  #mainWrap .titleBox h3{margin-bottom: 20px; font-size: 75px; line-height: 1;}
+  #mainWrap .titleBox p{font-size: 30px;}
+
+}
+
+@media (max-width: 767px){
+
+  #mainWrap .titleBox span{margin-bottom: 15px; font-size: 16px;}
+  #mainWrap .titleBox h3{margin-bottom: 15px; font-size: 60px;}
+  #mainWrap .titleBox p{font-size: 20px;}
+
+}
+
+@media (max-width: 480px){
+
+  #mainWrap .titleBox .title{top: 75%;}
+  #mainWrap .titleBox span{margin-bottom: 10px; font-size: 14px;}
+  #mainWrap .titleBox h3{margin-bottom: 10px; font-size: 45px;}
+  #mainWrap .titleBox p{font-size: 16px;}
+
+}
+
+/* 계열사영역 */
+#affiliatesWrap{padding: 185px 0 165px;}
+#affiliatesWrap .titleBox{margin-bottom: 80px;}
+#affiliatesWrap .titleBox span{display: block; font-size: 13px; font-weight: 700; color: #5C86DE;}
+#affiliatesWrap .titleBox h3{margin-bottom: 35px; font-size: 24px; font-weight: 700; color: #032C81;}
+#affiliatesWrap .titleBox p.text01{margin-bottom: 11px; font-size: 30px; color: #050C19; font-weight: 300; line-height: 1.6;}
+#affiliatesWrap .titleBox p.text02{font-size: 65px; color: #000; font-weight: 700; line-height: 1.1; }
+#affiliatesWrap .titleBox p.text02 em{color: #143E8D;}
+#affiliatesWrap .affiliatesList{display: flex; flex-direction: column; align-items: flex-end;}
+#affiliatesWrap .affiliatesList li{margin-bottom: 30px;}
+#affiliatesWrap .affiliatesList li a{position: relative; display: flex; gap: 0 5px;  font-size: 32px; font-weight: 600; color: #3060C0; line-height: 1.1;}
+#affiliatesWrap .affiliatesList li a::after{content: ''; padding: 28px 179px 0 0; background: url(../images/main/link_arrow_icon.png)no-repeat center; background-size: 100% auto;}
+#affiliatesWrap .affiliatesBox{position: relative;}
+#affiliatesWrap .affiliatesBox::before{content: ''; padding: 345px 292px 0 0;  position: absolute; bottom: 0; left:0; background: url(../images/main/icon04.png)no-repeat center; background-size: 100% auto; animation: iconEffect 2s alternate infinite both;}
+
+@keyframes iconEffect {
+
+  0%{transform: rotate(-15deg);}
+  100%{transform: rotate(15deg);}
+
+}
+
+@media (max-width: 1199px){
+
+  #affiliatesWrap{padding: 90px 0 55px;}
+  #affiliatesWrap .titleBox span{font-size: 12px;}
+  #affiliatesWrap .titleBox h3{margin-bottom: 30px; font-size: 20px;}
+  #affiliatesWrap .titleBox p.text01{font-size: 26px;}
+  #affiliatesWrap .titleBox p.text02{font-size: 40px;}
+  #affiliatesWrap .affiliatesList li{margin-bottom: 25px;}
+  #affiliatesWrap .affiliatesList li a{font-size: 25px;}
+  #affiliatesWrap .affiliatesList li a::after{padding: 28px 140px 0 0;}
+  #affiliatesWrap .affiliatesBox::before{padding: 313px 265px 0 0;}
+
+}
+
+@media (max-width: 767px){
+
+  #affiliatesWrap{padding: 70px 0 45px;}
+  #affiliatesWrap .titleBox{margin-bottom: 60px;}
+  #affiliatesWrap .titleBox h3{margin-bottom: 25px; font-size: 18px;}
+  #affiliatesWrap .titleBox p.text01{font-size: 22px;}
+  #affiliatesWrap .titleBox p.text02{font-size: 26px;}
+  #affiliatesWrap .affiliatesList li{margin-bottom: 10px;}
+  #affiliatesWrap .affiliatesList li a{font-size: 18px;}
+  #affiliatesWrap .affiliatesList li a::after{padding: 28px 100px 0 0;}
+  #affiliatesWrap .affiliatesBox::before{padding: 226px 189px 0 0;}
+ 
+}
+
+@media (max-width: 480px){
+
+  #affiliatesWrap{padding: 40px 0 45px;}
+  #affiliatesWrap .titleBox p.text01{font-size: 20px; line-height: 1.3;}
+  #affiliatesWrap .titleBox{margin-bottom: 50px;}
+  #affiliatesWrap .affiliatesList li{margin-bottom: 5px;}
+  #affiliatesWrap .affiliatesList li a{font-size: 16px;}
+  #affiliatesWrap .affiliatesList li a::after{padding: 28px 80px 0 0;}
+  #affiliatesWrap .affiliatesBox::before{padding: 162px 134px 0 0;}
+  
+}
+
+@media (max-width: 414px){
+
+  #affiliatesWrap .titleBox h3{margin-bottom: 20px;}
+  #affiliatesWrap .titleBox p.text02{font-size: 22px;}
+  #affiliatesWrap .affiliatesBox::before{padding: 136px 114px 0 0;}
+  
+}
+
+/* 뉴스영역 */
+#newsWrap{padding: 80px 0 140px;}
+#newsWrap h3{margin-bottom: 77px; font-size: 65px; color: #000; line-height: 1; font-weight: 800;}
+#newsWrap .newsList{display: flex;}
+#newsWrap .newsList li{width: 412px;}
+#newsWrap .newsList li a{display: block;}
+#newsWrap .newsList li a .imgBox{margin-bottom: 20px; overflow: hidden; border-radius: 20px;}
+#newsWrap .newsList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all .5s;}
+#newsWrap .newsList li a:hover .imgBox img{transform: scale(1.2);}
+#newsWrap .newsList li a:hover .textBox p{text-decoration: underline;}
+#newsWrap .newsList li a .textBox p{margin-bottom: 20px; font-size: 20px; line-height: 1.3; color: #000; font-weight: 500; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+#newsWrap .newsList li a .textBox .date{display: block; margin-bottom: 47px; font-size: 14px; font-weight: 500; color: #9F9F9F; line-height: 1.9;}
+#newsWrap .swiper-pagination{position: static; height: 5px; background-color: #EBEBEB;}
+#newsWrap .swiper-pagination-progressbar-fill{background-color: #143E8D;}
+
+@media (max-width: 1199px){
+  
+  #newsWrap{padding: 80px 0 100px;}
+  #newsWrap h3{font-size: 50px;}
+  #newsWrap .newsList li a .imgBox{margin-bottom: 15px; border-radius: 15px;}
+  #newsWrap .newsList li a .textBox p{margin-bottom: 15px; font-size: 18px;}
+
+}
+
+@media (max-width: 767px){
+
+  #newsWrap{padding: 70px 0;}
+  #newsWrap h3{margin-bottom: 46px; font-size: 35px;}
+  #newsWrap .newsList li a .imgBox{margin-bottom: 15px; border-radius: 15px;}
+  #newsWrap .newsList li a .textBox p{margin-bottom: 15px; font-size: 18px;}
+
+}
+
+/* 가치영역 */
+#worthWrap{padding: 155px 0 80px;  position: relative;}
+#worthWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/worth_img01.jpg)no-repeat center; background-size: cover; background-attachment: fixed; z-index: -1;}
+#worthWrap .worthBox{position: relative; display: flex;}
+#worthWrap .worthBox .imgBox{margin-right: 47px;}
+#worthWrap .worthBox .imgBox img{display: block; width: 100%;}
+#worthWrap .worthBox .textBox{margin-right: 16px; padding: 135px 0 0;}
+#worthWrap .worthBox .textBox .text01{margin-bottom: 10px; font-size: 30px; font-weight: 300; color: #fff;}
+#worthWrap .worthBox .textBox .title{margin-bottom: 30px;}
+#worthWrap .worthBox .textBox .title img{display: block; width: 100%;}
+#worthWrap .worthBox .textBox .text02{ font-size: 30px; font-weight: 700; color: #fff;}
+#worthWrap .worthBox .textList{margin-top: 413px; padding-top: 35px; position: relative;}
+#worthWrap .worthBox .textList::after{content: ''; position: absolute; top:0; left: 0; width: 250px; height: 1px; background-color: #fff;}
+#worthWrap .worthBox .textList li{margin-bottom: 20px; font-size: 24px; font-weight: 500; color: #fff; letter-spacing: -1px;}
+#worthWrap .worthBox .textList li:last-child{margin-bottom: 0;}
+
+@media (max-width: 1199px){
+
+  #worthWrap{position: relative; padding: 90px 0 50px;}
+  #worthWrap .worthBox{flex-direction: column;}
+  #worthWrap .worthBox .imgBox{position: absolute; left:-20px; bottom: -50px;}
+  #worthWrap .worthBox .imgBox img{display: none; width: 400px; opacity: .9;}
+  #worthWrap .worthBox .textBox{order:1; margin: 0;}
+  #worthWrap .worthBox .textList{order: 2;}
+  #worthWrap .worthBox .textBox .title img{width: 476px; margin: 0 auto;}
+  #worthWrap .worthBox .textBox{position: relative; padding: 0; text-align: center;}
+  #worthWrap .worthBox .textList{margin: 34px 0 30px; text-align: center;}
+  #worthWrap .worthBox .textList::after{width: 150px; left: 50%; margin-left: -75px;}
+  #worthWrap .worthBox .textBox .text02,
+  #worthWrap .worthBox .textBox .text01{font-size: 24px;}
+  #worthWrap .worthBox .textBox .text01{margin-bottom: 25px;}
+  #worthWrap .worthBox .textList li{margin-bottom: 20px; font-size: 20px;}
+
+}
+
+@media (max-width: 767px){
+
+  #worthWrap{padding: 80px 0 30px;}
+  #worthWrap .worthBox .textBox .title img{width: 300px;}
+  #worthWrap .worthBox .textBox .text02,
+  #worthWrap .worthBox .textBox .text01{font-size: 20px;}
+  #worthWrap .worthBox .textList li{font-size: 16px;}
+  #worthWrap .worthBox .imgBox{display: none;}
+  #worthWrap .worthBox .imgBox img{width: 300px;}
+
+}
+
+@media (max-width: 480px){
+
+  #worthWrap{padding: 70px 0 20px;}
+  #worthWrap .worthBox .imgBox{bottom: -20px;}
+  #worthWrap .worthBox .imgBox img{width: 200px;}
+
+}
+
+/* 투자영역 */
+#investorsWrap{background-color: #06245F; letter-spacing: -1px;}
+#investorsWrap .investorsBox{display: flex; align-items: center; height: 240px; }
+#investorsWrap h3{flex-shrink: 0; margin-right: 68px; color: #fff; font-size: 65px; font-weight: 800;}
+#investorsWrap .numberBox01{flex-shrink: 0;min-width: 225px;}
+#investorsWrap .numberBox01 span{position: relative; padding-left: 38px; display: block; font-size: 60px; color: #fff; font-weight: 800;}
+#investorsWrap .numberBox01 span::after{content: ''; position: absolute; top:26px; left:0; width: 26px; height: 23px;}
+#investorsWrap .numberBox01 span.numberUp::after{background: url(../images/main/icon01.png)no-repeat center; background-size: cover;}
+#investorsWrap .numberBox01 span.numberDown::after{background: url(../images/main/icon01.png)no-repeat center;  background-size: cover; transform: rotate(180deg);}
+#investorsWrap .numberBox02{margin-right: 61px;}
+#investorsWrap .numberBox02 .resultList li{margin-bottom: 14px; display: flex; align-items: center; gap: 0 79px; line-height: 1;}
+#investorsWrap .numberBox02 .resultList li span{flex-shrink: 0; width: 60px; color: #fff; font-size: 17px; font-weight: 300;}
+#investorsWrap .numberBox02 .resultList li em.numberIcon::before{content: ''; width: 14px; height: 12px; } 
+#investorsWrap .numberBox02 .resultList li em.numberUp::before{background: url(../images/main/icon02.png)no-repeat center;}
+#investorsWrap .numberBox02 .resultList li em.numberDown::before{background: url(../images/main/icon03.png)no-repeat center;}
+#investorsWrap .numberBox02 .resultList li em.numberIcon{position: relative; display: flex; align-items: center; gap: 0 7px;}
+#investorsWrap .numberBox02 .resultList li em{flex-shrink: 0; font-size: 17px; color: #fff; font-weight: 300;} 
+#investorsWrap .numberBox02 .resultList li:last-child{margin-bottom: 0;}
+#investorsWrap p{color: #fff; font-size: 22px; font-weight: 300; line-height: 1.3;}
+
+@media (max-width: 1199px){
+
+  #investorsWrap{padding: 60px 0;}
+  #investorsWrap .investorsBox{display: flex; flex-direction: column; height: auto;}
+  #investorsWrap h3{margin: 0; text-align: center; font-size: 50px;}
+  #investorsWrap .numberBox01,
+  #investorsWrap .numberBox02{margin: 0;}
+  #investorsWrap .numberBox01{min-width: auto; margin-bottom: 25px;}
+  #investorsWrap .numberBox02{margin-bottom: 45px;}
+  #investorsWrap .numberBox02 .resultList li span{font-size: 16px;}
+  #investorsWrap .numberBox02 .resultList li em{font-size: 16px;}
+  #investorsWrap .numberBox01 span{font-size: 50px;}
+  #investorsWrap .numberBox01 span::after{top: 21px; width: 23px; height: 20px;}
+  #investorsWrap p{text-align: center; font-size: 20px;}
+
+}
+
+@media (max-width: 767px){
+
+  #investorsWrap h3{font-size: 35px;}
+  #investorsWrap .numberBox02{margin-bottom: 36px;}
+  #investorsWrap .numberBox01{margin-bottom: 18px;}
+  #investorsWrap .numberBox01 span{padding-left: 30px; font-size: 35px;}
+  #investorsWrap .numberBox01 span::after{top: 15px; width: 18px; height: 15px;}
+  #investorsWrap p{font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+  #investorsWrap p{font-size: 16px;}
+
+}
