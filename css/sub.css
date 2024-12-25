@@ -314,10 +314,9 @@
   .searchWrap .searchBox{width: 100%;}
   .searchWrap .searchBox .search,
   .searchWrap .searchBox .selectBox{height: 55px;}
-  .searchWrap .searchBox .selectBox{width: 113px;}
-  .searchWrap .searchBox{padding-left: 26px;}
+  .searchWrap .searchBox .selectBox{width: 168px;}
   .searchWrap .searchBox .search::after{right: 20px;}
-  .searchWrap .searchBox .search{padding-right: 52px;}
+  .searchWrap .searchBox .search{padding-right: 52px; margin-left: 30px;}
 
 }
 

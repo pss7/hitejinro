@@ -2,6 +2,7 @@
 
 /* 공통 */
 #wrap{overflow-x: hidden;}
+body.of{overflow: hidden;}
 
 /* 공통-가운데영역 */
 .container{max-width: 1330px; margin: 0 auto; padding: 0 20px;}
@@ -62,15 +63,16 @@
 #siteMap .siteMapDepth02 li h3 a:hover span{color: #97E0FF;}
 #siteMap .closeBtn{padding: 64px 64px 0 0; position: absolute; top:38px; right:90px; background: url(../images/common/close_btn.png)no-repeat center; background-size: 100% auto; transition: all .5s;}
 #siteMap .closeBtn:hover{transform: rotate(180deg);}
-#mobileMenu{padding: 35px 120px 0 0; position: fixed; top: 0; right: -3000px; bottom: 0; background: linear-gradient(to right, #143E8D, #0296D6); z-index: 999;}
+#mobileMenu{padding: 35px 0 0 0; position: fixed; top: 0; right: -3000px; bottom: 0; background: linear-gradient(to right, #143E8D, #0296D6); z-index: 999;}
 #mobileMenu .logoBox{margin:0 0 10px 30px;}
 #mobileMenu .logoBox h1{display: flex;}
 #mobileMenu .logoBox h1 a{padding: 44px 151px 0 0; background: url(../images/common/logo03.png)no-repeat center; background-size: 100% auto;}
-#mobileMenu .mobileDepth01 li h2 a{padding: 15px 20px 15px 35px; display: block; font-size: 18px; font-weight: 300; color: #fff;}
+#mobileMenu .mobileDepth01 li h2 a{padding: 15px 150px 15px 35px; display: block; font-size: 18px; font-weight: 700; color: #fff;}
 #mobileMenu .mobileDepth02{display: none;}
-#mobileMenu .mobileDepth02 li h3 a{display: block; color: #fff; font-size: 16px; color: #fff;}
+#mobileMenu .mobileDepth02 li h3 a{padding: 10px 0 10px 50px; display: block; color: #fff; font-size: 16px; color: #fff; font-weight: 200;}
 .mobileBg{display: none; position: fixed; top:0; left:0; right: 0; bottom: 0; background-color: rgba(0,0,0,.3);}
 #mobileMenu .closeBtn{padding: 20px 20px 0 0; position: absolute; top:20px; right:20px; background: url(../images/common/close_btn.png)no-repeat center; background-size: 100% auto;}
+#mobileMenu .mobileDepth01 li h2.active + .mobileDepth02{display: block;}
 
 @media (max-width: 1480px){
 

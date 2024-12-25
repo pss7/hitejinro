@@ -21,6 +21,7 @@ $(function () {
   });
 
   $('#header .menuBox .menuButton.m').click(function () {
+    $('body').addClass('of');
     $('#mobileMenu').animate({
       right: 0
     }, 500);
@@ -28,11 +29,31 @@ $(function () {
   });
 
   $('#mobileMenu .closeBtn').click(function () {
+    $('body').removeClass('of');
     $('#mobileMenu').animate({
       right: -3000
     }, 500);
     $('.mobileBg').hide();
   });
+
+  $('#mobileMenu .mobileDepth01 li h2 a').click(function () {
+    if ($(this).parents('li').find('.mobileDepth02').length) {
+      if ($(this).parent('h2').hasClass('active')) {
+        $(this).parents('li').find('.mobileDepth02').slideUp();
+        $(this).parent('h2').removeClass('active');
+      } else {
+        $('#mobileMenu .mobileDepth01 li').find('.mobileDepth02').slideUp();
+        $(this).parents('li').find('.mobileDepth02').slideDown();
+        $('#mobileMenu .mobileDepth01 li').removeClass('active');
+        $(this).parent('h2').addClass('active');
+      }
+      return false;
+    }
+  });
+  $('#mobileMenu .mobileDepth01 li:has(ul)').children('a').addClass('depth2');
+
+
+
 
   //로드 시 상단에서 헤더 나오는 효과, aos 초기화
   $(window).load(function () {
