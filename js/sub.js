@@ -34,4 +34,41 @@ $(function () {
     return false;
   });
 
+  /* 연혁 탭 */
+  $('.historyContentBox .historyContent').hide();
+  $('.historyContentBox .historyContent').first().show();
+
+  $('.historyWrap .historyTopList li').click(function () {
+
+    $('.historyWrap .historyTopList li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    const idx = $(this).index();
+
+    $('.historyContentBox .historyContent').hide();
+    $('.historyContentBox .historyContent').eq(idx).show();
+
+    return false;
+
+  });
+
+  $('.historyTabContent .historyList').hide();
+  $('.historyTabContent .historyList').first().show();
+
+  $('.historyWrap .historyTab li').click(function () {
+
+    $('.historyWrap .historyTab li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    const idx = $(this).index();
+
+    $('.historyTabContent .historyList').hide();
+    $('.historyTabContent .historyList').eq(idx).show();
+
+    return false;
+
+  });
+
+
+
 });

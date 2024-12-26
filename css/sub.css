@@ -570,20 +570,89 @@
 .ciWrap p.text01{margin-bottom: 76px; font-size: 22px; font-weight: 300; color: #555;}
 .ciWrap p.text01 strong{display: block; color: #000; font-weight: 600;}
 
+/* 연혁 */
+.historyWrap .topTitleText{margin-bottom: 75px;}
+.historyWrap .historyTopList{margin-bottom: 100px; position: relative; display: flex; justify-content: center;}
+.historyWrap .historyTopList::after{content: ''; position: absolute;  left: -100%; right: -100%; bottom: -20px; height: 1px; background-color: #999; z-index: -1;}
+.historyWrap .historyTopList li{width: 25%;}
+.historyWrap .historyTopList li a{position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px 0; line-height: 1;}
+.historyWrap .historyTopList li a::after{content: ''; position: absolute; left:50%; transform: translateX(-50%); bottom: -31px; width: 20px; height: 20px; background-color: #D9D9D9;}
+.historyWrap .historyTopList li a.active span{color: #00A1E4;}
+.historyWrap .historyTopList li a.active em{color: #00A1E4;}
+.historyWrap .historyTopList li a.active::after{background-color: #00A1E4;}
+.historyWrap .historyTopList li a span{font-weight: 200; color: #000;}
+.historyWrap .historyTopList li a em{font-size: 24px; font-weight: 500; color:#999}
+.historyWrap .historyContentBox .yearBox{align-self: baseline; flex-shrink: 0; width: 421px; padding: 40px 0;}
+.historyWrap .historyContentBox .yearBox span{display: block; font-size: 48px; line-height: 1; color: #000; letter-spacing: -1px;}
+.historyWrap .historyContentBox .yearBox span strong{font-weight: 900;}
+.historyWrap .historyContentBox .monthBox{width: 100%;}
+.historyWrap .historyContentBox .monthBox .box{display: flex; align-items: center; padding: 40px 0; border-bottom: 1px solid #888;}
+.historyWrap .historyContentBox .monthBox .box:last-child{border-bottom: 0;}
+.historyWrap .historyContentBox .monthBox span{flex-shrink: 0; align-self: baseline; margin-right: 30px; font-size: 20px; font-weight: 300; color: #666;}
+.historyWrap .historyContentBox .monthBox .imgBox{align-self: center;}
+.historyWrap .historyContentBox .monthBox .imgBox img{display: block; margin: 0 auto;}
+.historyWrap .historyContentBox .monthBox .list{margin-left: 30px;}
+.historyWrap .historyContentBox .monthBox .list li{padding-left: 17px; position: relative; margin-bottom: 17px; font-size: 15px; color: #333;}
+.historyWrap .historyContentBox .monthBox .list li:last-child{margin-bottom: 0;}
+.historyWrap .historyContentBox .monthBox .list li::before{content: ''; position: absolute; top:8px; left:0; width: 4px; height: 4px; border-radius: 50%; background-color: #333;}
+.historyWrap .historyContentBox .historyList{border-top: 2px solid #000;}
+.historyWrap .historyContentBox .historyList > li{display: flex; align-items: center; border-bottom: 1px solid #888;}
+.historyWrap  .historyTab{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; height: 80px; background-color: #000;} 
+.historyWrap  .historyTab li a{padding: 11px 36px; display: block; color: #fff; font-weight: 500; text-align: center;}
+.historyWrap  .historyTab li a.active{background-color: #fff; border-radius: 50px; color: #000;}
 
 
+@media (max-width: 1199px){
 
+  .historyWrap .historyTopList li a em{font-size: 22px;}
+  .historyWrap .historyTopList li a::after{width: 15px; height: 15px; bottom: -27px;}
+  .historyWrap .historyContentBox .yearBox{width: 150px;}
+  .historyWrap .historyContentBox .yearBox span{font-size: 30px;}
+  .historyWrap .historyContentBox .monthBox span{font-size: 16px;}
+  .historyWrap  .historyTab li{width: 50%;}
+  .historyWrap  .historyTab li a.active{border-radius: 0;}
+  .historyWrap  .historyTab{height: auto;}
 
+}
 
+@media (max-width: 767px){
 
+  .historyWrap .historyTopList{margin-bottom: 80px;}
+  .historyWrap .historyTopList::after{bottom: -14px;}
+  .historyWrap .historyTopList li a em{font-size: 16px;}
+  .historyWrap .historyTopList li a span{font-size: 14px;}
+  .historyWrap .historyTopList li a::after{width: 10px; height: 10px; bottom: -18px;}
+  .historyWrap .historyContentBox .yearBox{width: 120px;}
+  .historyWrap .historyContentBox .yearBox span{font-size: 25px;}
 
+}
 
+@media (max-width: 480px){
 
+  .historyWrap .historyTopList li a em{font-size: 14px;}
+  .historyWrap .historyTopList li a span{font-size: 12px;}
+  .historyWrap .historyContentBox .historyList > li{flex-direction: column;}
+  .historyWrap .historyContentBox .yearBox{padding: 18px 0; width: 100%; text-align: center; background-color: #f7f7f7;}
+  .historyWrap .historyContentBox .yearBox span{font-size: 20px;}
+  .historyWrap .historyContentBox .monthBox .box{padding: 18px 0 30px; flex-direction: column;}
+  .historyWrap .historyContentBox .monthBox span{width: 100%; margin: 10px 0 30px; text-align: center;}
+  .historyWrap .historyContentBox .monthBox .imgBox{margin: 10px 0 20px;}
+  .historyWrap .historyContentBox .monthBox .list{margin: 0;}
+  .historyWrap .historyTab li a{font-size: 14px;}
 
+}
 
+@media (max-width: 360px){
 
-
-
+  .historyWrap .historyTopList::after{bottom: -9px;}
+  .historyWrap .historyTopList li a em{font-size: 12px;}
+  .historyWrap .historyTopList li a span{font-size: 11px;}
+  .historyWrap .historyTopList li a::after{width: 7px; height: 7px; bottom: -12px;}
+  .historyWrap .historyTopList{margin-bottom: 60px;}
+  .historyWrap .historyContentBox .yearBox span{font-size: 16px;}
+  .historyWrap .historyTab li a{font-size: 12px;}
+  
+}
 
 
 

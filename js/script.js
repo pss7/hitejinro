@@ -52,9 +52,6 @@ $(function () {
   });
   $('#mobileMenu .mobileDepth01 li:has(ul)').children('a').addClass('depth2');
 
-
-
-
   //로드 시 상단에서 헤더 나오는 효과, aos 초기화
   $(window).load(function () {
     $('#header').addClass('active');
