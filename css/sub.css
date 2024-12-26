@@ -544,19 +544,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 보도자료 */
 .dataWrap .topTitleText{margin-bottom: 50px;}
 
@@ -573,5 +560,6 @@
 
 }
 
-
+/* 공시 */
+.disclosureWrap .topTitleText{margin-bottom: 88px;}
 
