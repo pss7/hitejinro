@@ -69,6 +69,61 @@ $(function () {
 
   });
 
+  //게열사현황 슬라이드
+  $(".affiliateSlideBox .slick").slick({
+    autoplay: true,
+    arrows: true,
+    dots: false,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 8000,
+    speed: 1500,
+    prevArrow: $('.affiliateSlideBox .control .prev'),
+    nextArrow: $('.affiliateSlideBox .control .next'),
+    responsive: [ // 반응형 웹 구현 옵션
+      {
+        breakpoint: 768,
+        settings: {
 
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
+  });
+
+  // 게열사현황 탭 
+  $('.affiliateWrap .affiliateInfoBox').hide();
+  $('.affiliateWrap .affiliateInfoBox').first().show();
+
+  $('.affiliateWrap .commonTab li').click(function () {
+
+    $('.affiliateWrap .commonTab li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    const idx = $(this).index();
+
+    $('.affiliateWrap .affiliateInfoBox').hide();
+    $('.affiliateWrap .affiliateInfoBox').eq(idx).show();
+
+    return false;
+
+  });
 
 });

@@ -406,22 +406,22 @@
 
 /* 기업지배구조 */
 .enterpriseWrap .topTitleText{margin-bottom: 50px;}
-.enterpriseWrap .enterpriseTab{margin-bottom: 50px; height: 100px; display: flex; align-items: center; justify-content: center; background-color: #F3F3F3;}
-.enterpriseWrap .enterpriseTab li a{display: block; padding:18px 66px;  color: #999; font-size: 20px; font-weight: 500; line-height: 1.4; border-radius: 50px; transition: all .5s;}
-.enterpriseWrap .enterpriseTab li a.active{background-color: #143E8D;  color: #fff;}
-.enterpriseWrap .enterpriseTab li a:hover{background-color: #143E8D;  color: #fff;}
+.commonTab{margin-bottom: 50px; height: 100px; display: flex; align-items: center; justify-content: center; background-color: #F3F3F3;}
+.commonTab li a{display: block; padding:18px 66px;  color: #999; font-size: 20px; font-weight: 500; line-height: 1.4; border-radius: 50px; transition: all .5s; text-align: center;}
+.commonTab li a.active{background-color: #143E8D;  color: #fff;}
+.commonTab li a:hover{background-color: #143E8D;  color: #fff;}
 
 @media (max-width: 1199px){
 
-  .enterpriseWrap .enterpriseTab{align-items: normal; margin-bottom: 30px; height: auto; flex-wrap: wrap;}
-  .enterpriseWrap .enterpriseTab li{width: 50%;}
-  .enterpriseWrap .enterpriseTab li a{display: flex; align-items: center; justify-content: center; height: 100%; padding: 15px 20px; font-size: 16px; text-align: center; border-radius: 0;}
+  .commonTab{align-items: normal; margin-bottom: 30px; height: auto; flex-wrap: wrap;}
+  .commonTab li{width: 50%;}
+  .commonTab li a{display: flex; align-items: center; justify-content: center; height: 100%; padding: 15px 20px; font-size: 16px; text-align: center; border-radius: 0;}
 
 }
 
 @media (max-width: 767px){
 
-  .enterpriseWrap .enterpriseTab li a{font-size: 14px;}
+  .commonTab li a{font-size: 14px;}
 
 }
 
@@ -590,7 +590,7 @@
 .historyWrap .historyContentBox .monthBox .box:last-child{border-bottom: 0;}
 .historyWrap .historyContentBox .monthBox span{flex-shrink: 0; align-self: baseline; margin-right: 30px; font-size: 20px; font-weight: 300; color: #666;}
 .historyWrap .historyContentBox .monthBox .imgBox{align-self: center;}
-.historyWrap .historyContentBox .monthBox .imgBox img{display: block; margin: 0 auto;}
+.historyWrap .historyContentBox .monthBox .imgBox img{display: block; width: 100%; margin: 0 auto;}
 .historyWrap .historyContentBox .monthBox .list{margin-left: 30px;}
 .historyWrap .historyContentBox .monthBox .list li{padding-left: 17px; position: relative; margin-bottom: 17px; font-size: 15px; color: #333;}
 .historyWrap .historyContentBox .monthBox .list li:last-child{margin-bottom: 0;}
@@ -654,24 +654,101 @@
   
 }
 
+/* 계열사 현황 */
+.affiliateWrap .affiliateText{display: block; margin-bottom: 27px; font-size: 24px; color: #000;}
+.affiliateWrap .commonTab{margin-bottom: 86px;}
+.affiliateWrap .affiliateInfoBox{display: flex; gap: 0 89px; margin-bottom: 60px;}
+.affiliateWrap .affiliateInfoBox .imgBox{ padding: 41% 20px 20px; position: relative; display: flex; align-items: center; justify-content: center; width: 760px; height: 0; padding-top: 41%; border: 1px solid #E6E6E6;}
+.affiliateWrap .affiliateInfoBox .imgBox img{display: block; position: absolute; top:-100%; left:-100%; right:-100%; bottom: -100%; margin: auto;  max-width: 90%; max-height: 90%;}
+.affiliateWrap .affiliateInfoBox .textBox h4{margin-bottom: 27px; font-size: 48px; font-weight: 300; color: #143E8D;}
+.affiliateWrap .affiliateInfoBox .textBox .affiliateInfoList{margin-bottom: 39px;}
+.affiliateWrap .affiliateInfoBox .textBox .affiliateInfoList li{margin-bottom: 10px; display: flex; align-items: center; gap: 0 32px;}
+.affiliateWrap .affiliateInfoBox .textBox .affiliateInfoList li span{position: relative; padding-left: 15px; width: 78px; flex-shrink: 0; font-size: 17px; font-weight: 500; color: #143E8D;}
+.affiliateWrap .affiliateInfoBox .textBox .affiliateInfoList li span::before{content: ''; width: 3px; height: 3px; position: absolute; top:10px; left:5px; border-radius: 50%; background-color: #143E8D;}
+.affiliateWrap .affiliateInfoBox .textBox .link{position: relative; display: flex; align-items: center; padding: 0 0 0 24px; width: 250px; height: 58px; font-weight: 500; color: #fff; font-size: 20px; background-color: #143E8D;}
+.affiliateWrap .affiliateInfoBox .textBox .link::after{content: ''; padding: 10px 14px 0 0; position: absolute; top:50%; transform: translateY(-50%); right:24px; background: url(../images/sub/link_arrow_icon.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .affiliateSlideBox{position: relative; padding: 59px 0 85px; margin-bottom: 100px;}
+.affiliateWrap .affiliateSlideBox::after{content: ''; position: absolute; top:0; left:-100%; right:-100%; bottom: 0; background-color: #f5f5f5; z-index: -1;}
+.affiliateWrap .affiliateSlideBox .box{display: block; margin: 0 20px; background-color: #fff; padding: 48px 20px 20px; border: 1px solid #E3E3E3;}
+.affiliateWrap .affiliateSlideBox .box h5{margin-bottom: 46px; position: relative; font-size: 20px; font-weight: 500; color: #000; text-align: center; line-height: 1.2;}
+.affiliateWrap .affiliateSlideBox .box h5::after{content: ''; position: absolute; left:50%; margin-left: -16px; bottom: -21px; width: 32px; height: 1px; background-color: #000;}
+.affiliateWrap .affiliateSlideBox .box .imgBox img{display: block; max-width: 100%; margin: 0 auto;}
+.affiliateWrap .affiliateSlideBox .slick-list{margin: 0 -20px;}
+.affiliateWrap .control button{display: block; padding: 57px 58px 0 0; position: absolute; top: 50%; transform: translateY(-50%);}
+.affiliateWrap .control button.prev{left: -67px; background: url(../images/sub/prev.png)no-repeat center; background-size: 100% auto; }
+.affiliateWrap .control button.next{right: -67px; background: url(../images/sub/next.png)no-repeat center; background-size: 100% auto; }
+.affiliateWrap .overseasAffiliatesBox .imgBox{margin-bottom: 21px;}
+.affiliateWrap .overseasAffiliatesBox .imgBox img{display: block; width: 100%; margin: 0 auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList{display: flex; flex-wrap: wrap; gap: 30px 2.2%;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li{width: 31.78%; border-radius: 30px; border: 1px solid #D9D9D9;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4{ padding: 19px 10px 17px 34px; border-bottom: 1px solid #D9D9D9; font-size: 24px; color: #000; font-weight: 600;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span{padding-left: 50px; position: relative;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span::before{content: ''; position: absolute; top:2px; left:0; padding: 26px 37px 0 0;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span.japan::before{background: url(../images/sub/japan.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span.usa::before{background: url(../images/sub/usa.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span.china::before{background: url(../images/sub/china.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span.singapore::before{background: url(../images/sub/singapore.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span.manila::before{background: url(../images/sub/manila.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span.russia::before{background: url(../images/sub/russia.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span.vietnam::before{background: url(../images/sub/vietnam.png)no-repeat center; background-size: 100% auto;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li .box{padding: 25px 25px 25px 38px;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li .box h5{color: #3060C0; font-size: 22px;}
+.affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li .box p{font-size: 13px; color: #999; line-height: 1.8; font-weight: 300;}
+.affiliateWrap .topTitleText{margin-bottom: 72px;}
+
+@media (max-width: 1199px){
+
+  .affiliateWrap .affiliateInfoBox{gap: 0 50px;}
+  .affiliateWrap .affiliateInfoBox .imgBox{width: 700px;}
+  .affiliateWrap .affiliateInfoBox .textBox h4{font-size: 35px;}
+  .affiliateWrap .commonTab{margin-bottom: 58px;}
+  .affiliateWrap .affiliateSlideBox{padding: 60px 0;}
+  .affiliateWrap .control{display: none;}
+  .affiliateWrap .control button.prev{left:0;}
+  .affiliateWrap .control button.next{right: 0;}
+  .affiliateWrap .affiliateSlideBox{margin-bottom: 60px;}
+  .affiliateWrap .affiliateText{font-size: 22px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList{gap: 25px 2.2%}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li{border-radius: 10px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span{font-size: 22px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li .box h5{font-size: 20px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li .box{padding: 20px 20px 20px 34px;}
+  .affiliateWrap .affiliateSlideBox .box h5{font-size: 18px;}
+  .affiliateWrap .affiliateSlideBox .box h5::after{width: 22px; margin-left: -11px;}
+
+}
+
+@media (max-width: 1024px){
+
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList{gap: 20px 2%;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li{width: 49%;}
+
+}
+
+@media (max-width: 767px){
+
+  .affiliateWrap .affiliateSlideBox{padding: 40px 0; margin-bottom: 30px;}
+  .affiliateWrap .affiliateInfoBox{flex-direction: column; gap: 30px 0;}
+  .affiliateWrap .affiliateInfoBox .imgBox{width: 100%;}
+  .affiliateWrap .affiliateInfoBox .textBox h4{font-size: 25px;}
+  .affiliateWrap .affiliateInfoBox .textBox .link{width: 224px; height: 49px; font-size: 16px;}
+  .affiliateWrap .affiliateSlideBox .slick-list{margin: 0 -10px;}
+  .affiliateWrap .affiliateSlideBox .box{padding: 30px 20px 20px; margin: 0 10px;}
+  .affiliateWrap .affiliateText{font-size: 18px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span{font-size: 20px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span::before{top: -1px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4{padding: 19px 10px 17px 25px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li .box{padding: 20px 20px 20px 25px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li .box h5{font-size: 18px;}
+  
+}
+
+@media (max-width: 480px){
+
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li{width: 100%;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span::before{top: -4px;}
+  .affiliateWrap .overseasAffiliatesBox .overseasAffiliatesList li h4 span{font-size: 16px;}
+
+}
 
 
-
-
-/* .ciWrap .ciList{display: flex; flex-wrap: wrap; gap: 0 6%;}
-.ciWrap .ciList li{width: 46.97%;}
-.ciWrap .ciList li .imgBox{min-height: 255px; padding: 90px 20px;}
-.ciWrap .ciList li .imgBox img{display: block; margin: 0 auto;}
-.ciWrap .ciList li .title{gap: 5px 0; display: flex; flex-direction: column; justify-content: flex-end; height: 53px; padding-bottom: 10px; border-bottom: 1px solid #D9D9D9;}
-.ciWrap .ciList li .title h5{height: 25px;}
-.ciWrap .ciList li .title h5 img{display: block;}
-.ciWrap .ciList li .title span{ display: block; font-size: 14px; font-weight: 500; color: #999; font-weight: 300;}
-.ciWrap .ciList.ciListSt li{width: 100%; margin-bottom: 70px;}
-.ciWrap .ciList.ciListSt li .imgBox{ width: 45%; padding: 45px 0;}
-.ciWrap .ciList.ciListSt li .imgBox .img{flex-shrink: 0; width: 250px; margin: 0 auto;}
-.ciWrap .ciList.ciListSt li .box{display: flex; flex-wrap: wrap; justify-content: center; gap: 0 9%;}
-.ciWrap .ciList.ciListSt li .box .imgBox{ display: flex; justify-content: center;}
-.ciWrap .ciList.ciListSt li .box .imgBox p{font-size: 15px; color: #555; font-weight: 500; line-height: 1.9; letter-spacing: -1px;}
-.ciWrap .ciList.ciListSt li .box .imgBox p strong.color01{color: #0096D6; font-weight: 500;}
-.ciWrap .ciList.ciListSt li .box .imgBox p .tit{font-size: 20px; font-weight: 500;}
-.ciWrap .ciList.ciListSt li .box .imgBox p  span{font-weight: 700; color: #000; font-weight: 600;} */
