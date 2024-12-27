@@ -43,7 +43,7 @@ body.of{overflow: hidden;}
 #siteMap .logoBox{margin-left: 75px;}
 #siteMap .logoBox h1{display: flex;}
 #siteMap .logoBox h1 a{padding: 58px 214px 0 0; background: url(../images/common/logo03.png)no-repeat center; background-size: 100% auto;}
-#siteMap .siteMapDepth01{margin: 74px 0 0 0; display: flex; justify-content: center; gap: 0 200px;}
+#siteMap .siteMapDepth01{padding: 0 20px; margin: 74px 0 0 0; display: flex; justify-content: center; gap: 0 11%;}
 #siteMap .siteMapDepth01 > li{opacity: 0; transition-duration: 1.5s;}
 #siteMap .siteMapDepth01.active > li{opacity: 1;}
 #siteMap .siteMapDepth01 > li:nth-child(1){transition-delay: .5s;}
@@ -74,24 +74,31 @@ body.of{overflow: hidden;}
 #mobileMenu .closeBtn{padding: 20px 20px 0 0; position: absolute; top:20px; right:20px; background: url(../images/common/close_btn.png)no-repeat center; background-size: 100% auto;}
 #mobileMenu .mobileDepth01 li h2.active + .mobileDepth02{display: block;}
 
+@media (min-width: 1200px){
+
+  .mobileBg,
+  #mobileMenu{display: none!important;}
+
+}
+
 @media (max-width: 1480px){
 
-  #header{padding: 0 20px; justify-content: space-between;}
-  #header .logo{margin-right: 0;}
+  #header{padding: 0 20px;}
   #header nav .depth01 li h2 a{padding: 42px 30px;}
-  #header nav{margin-right: 0;}
+  #header nav{margin-right: calc(50% - 418px);}
 
 }
 
 @media (max-width: 1199px){
 
-  #header{height: 70px;}
+  #header{height: 70px; justify-content: space-between;}
   #header nav{display: none;}
   #header .link{display: none;}
   #header .logo h1 a{padding: 40px 145px 0 0;}
   #header .menuBox .menuButton{padding: 17px 22px 0 0;}
   #header .menuBox .menuButton.pc{display: none;}
   #header .menuBox .menuButton.m{display: block;}
+  #siteMap{display: none!important;}
 
 }
 
