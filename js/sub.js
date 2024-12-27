@@ -9,9 +9,9 @@ $(function () {
   $(".enterpriseWrap .tabContentBox .tabContent").hide();
   $(".enterpriseWrap .tabContentBox .tabContent").first().show();
 
-  $('.enterpriseWrap .enterpriseTab li').click(function () {
+  $('.enterpriseWrap .commonTab li').click(function () {
 
-    $('.enterpriseWrap .enterpriseTab li').children('a').removeClass('active');
+    $('.enterpriseWrap .commonTab li').children('a').removeClass('active');
     $(this).children('a').addClass('active');
 
     const Idx = $(this).index();
