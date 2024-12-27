@@ -184,7 +184,9 @@
 }
 
 /* 사회공헌개요 */
-.overviewWrap h4{text-align: center; font-size: 54px; font-weight: 500; color: #000;}
+.overviewWrap .overviewImgBox{margin-bottom: -121px;}
+.overviewWrap .overviewImgBox img{display: block; margin: 0 auto; max-width: 100%;}
+.overviewWrap h4{margin-bottom: 20px; text-align: center; font-size: 54px; font-weight: 500; color: #000;}
 .overviewWrap .topTitleText{margin-bottom: 86px;}
 .overviewWrap .overviewInfoBox{display: flex; align-items: center; flex-direction: column; gap: 55px 0;}
 .overviewWrap .overviewInfoBox .box{display: flex; gap: 0 40px;}
@@ -211,6 +213,8 @@
   .overviewWrap .overviewInfoBox .box .textBox p{font-size: 20px;}
   .overviewWrap .overviewInfoBox .box .textBox .view{width: 350px;}
   .overviewWrap .overviewInfoBox .box .textBox .view span{font-size: 16px;}
+  .overviewWrap .overviewImgBox{margin-bottom: -50px;}
+  .overviewWrap .overviewImgBox img{max-width: none; width: 70%;}
 
 }
 
@@ -227,6 +231,7 @@
   .overviewWrap .overviewInfoBox .box .textBox .view{width: 100%; padding: 10px 0; height: auto; gap: 5px 0; flex-direction: column; padding-left:10px; margin: 0; border-radius: 10px; text-align: center;}
   .overviewWrap .overviewInfoBox .box .textBox .view .img img{width: 100px;}
   .overviewWrap .overviewInfoBox .box .textBox .view span{font-size: 14px;}
+  .overviewWrap .overviewImgBox{margin-bottom: -20px;}
 
 }
 
@@ -238,6 +243,8 @@
   .overviewWrap .overviewInfoBox .box .imgBox{margin-bottom: 15px;}
   .overviewWrap .overviewInfoBox .box .imgBox,
   .overviewWrap .overviewInfoBox .box .textBox{width: 100%;}
+  .overviewWrap .overviewImgBox{margin-bottom: 40px;}
+  .overviewWrap .overviewImgBox img{width: 80%;}
 
 }
 
