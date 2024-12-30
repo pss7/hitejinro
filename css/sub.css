@@ -572,11 +572,13 @@
 .disclosureWrap .topTitleText{margin-bottom: 88px;}
 
 /* CI */
-.ciWrap h4{margin-bottom: 10px;}
+.ciWrap h4{margin-bottom: 9px;}
 .ciWrap  .topTitleText{margin-bottom: 60px;}
 .ciWrap h4 img{display: block;}
 .ciWrap p.text01{margin-bottom: 76px; font-size: 22px; font-weight: 300; color: #555;}
 .ciWrap p.text01 strong{display: block; color: #000; font-weight: 600;}
+.ciWrap .ciListBox li{position: relative; margin-bottom: 60px;}
+.ciWrap .ciListBox li:last-child{margin-bottom: 0;}
 .ciWrap .ciListBox li .title h4 img{display: block;}
 .ciWrap .ciListBox li .ciBox{display: flex; flex-wrap: wrap; gap: 0 6%;}
 .ciWrap .ciListBox li .ciBox .ci{position: relative; width: 46.97%;}
@@ -605,7 +607,9 @@
   .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBox{width: 100%;}
   .ciWrap .ciListBox li .ciBox02 .ci .imgBox{width: 50%;}
   .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBox p.textSt img{display: block; margin: 0 auto;}
-  .ciWrap .ciListBox li .ciBox03 .ci .textLayoutBoxSt p{text-align: center;}
+  .ciWrap .ciListBox li .ciBox03 .ci .textLayoutBox p{text-align: center;}
+  .ciWrap h4.title img{width: 100px;}
+  .ciWrap p.text01{margin-bottom: 54px; font-size: 18px;}
 
 }
 
