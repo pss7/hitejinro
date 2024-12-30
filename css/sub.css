@@ -595,9 +595,9 @@
 .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBox p .text .color{color: #0096D6;}
 .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBox p strong{color: #000; }
 .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBox p.textSt strong{color: #555; font-size: 20px; line-height: 1;}
-.ciWrap .ciListBox li .ciBox02 .ci .textLayoutBoxSt{flex-direction: column;}
+.ciWrap .ciListBox li .ciBox02 .ci .textLayoutBoxSt{padding: 22px 0; flex-direction: column; justify-content: center;}
 .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBoxSt .imgBox{width: 100%; margin: 0; padding-bottom: 0;}
-.ciWrap .ciListBox li .ciBox02 .ci .textLayoutBoxSt p{padding-top: 0;}
+.ciWrap .ciListBox li .ciBox02 .ci .textLayoutBoxSt p{padding-top: 0; text-align: left;}
 
 @media (max-width: 1024px){
 
@@ -605,6 +605,7 @@
   .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBox{width: 100%;}
   .ciWrap .ciListBox li .ciBox02 .ci .imgBox{width: 50%;}
   .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBox p.textSt img{display: block; margin: 0 auto;}
+  .ciWrap .ciListBox li .ciBox02 .ci .textLayoutBoxSt p{text-align: center;}
 
 }
 
