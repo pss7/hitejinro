@@ -841,4 +841,20 @@
 
 }
 
+/* 공통-상세페이지 */
+.viewBox{margin-bottom: 60px; border-top: 2px solid #000; border-bottom: 1px solid #D9D9D9;}
+.viewBox .titleBox{padding: 35px 20px 35px 28px; border-bottom: 1px solid #D9D9D9;}
+.viewBox .titleBox h4{margin-bottom: 30px; font-size: 40px; color: #000; line-height: 1.2; font-weight: 400;}
+.viewBox .titleBox .date{display: block; color: 000;}
+.viewBox .contentBox{padding: 35px 20px 35px 28px;}
+.viewBox .contentBox p{color: #000;}
 
+/* 공통-버튼 */
+.btnBox {display: flex; justify-content: center;}
+.btnBox .btn{ padding: 17px 108px; color: #fff; background-color: #143E8D; font-size: 20px; font-weight: 500;}
+
+@media (max-width: 767px){
+
+  .btnBox .btn{padding: 10px 50px; font-size: 16px;}
+
+}
