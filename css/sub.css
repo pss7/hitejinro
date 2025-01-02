@@ -849,6 +849,19 @@
 .viewBox .contentBox{padding: 35px 20px 35px 28px;}
 .viewBox .contentBox p{color: #000;}
 
+@media (max-width: 1199px){
+
+  .viewBox .titleBox h4{font-size: 28px;}
+
+}
+
+@media (max-width: 767px){
+
+  .viewBox .titleBox{padding: 25px 20px 25px 28px;}
+  .viewBox .titleBox h4{font-size: 22px;}
+
+}
+
 /* 공통-버튼 */
 .btnBox {display: flex; justify-content: center;}
 .btnBox .btn{ padding: 17px 108px; color: #fff; background-color: #143E8D; font-size: 20px; font-weight: 500;}
